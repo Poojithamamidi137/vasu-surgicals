@@ -1,0 +1,530 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
+     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+     
+
+
+    <title>VasuSurgicals</title>
+    <link rel="stylesheet" href="css/index.css">
+</head>
+<body>
+
+    <!-- NAVBAR -->
+    <header>
+        <nav class="navbar">
+            <div class="logo">
+                <img src="images/c-logo.png" alt="Logo">
+            </div>
+
+            <!-- HAMBURGER -->
+            <input type="checkbox" id="menu-toggle">
+            <label for="menu-toggle" class="hamburger">&#9776;</label>
+
+           <ul class="nav-links">
+                <li><a href="index.html">HOME</a></li>
+                <li><a href="about.html">ABOUT US</a></li>
+                <li><a href="profile.html">PROFILE</a></li>
+                <li><a href="products.html">PRODUCTS</a></li>
+                <li><a href="contact.html">CONTACT US</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <!-- HERO IMAGE SECTION -->
+<section class="hero">
+    <img src="images/vasuhome-banner.jpg" alt="Hero Image" class="hero-img">
+
+    <div class="hero-text">
+        <h2 class="text-black display-4 fw-semibold text-start pt-4">VASU SURGICALS IS A SURGICAL AND MEDICAL EQUIPMENT ITEMS SUPPLY INDUSTRY.</h2>
+         <a href="profile.html" class="hero-btn">View More</a>
+    </div>
+    
+</section>
+
+
+
+
+
+<section class="product-card">
+    
+    <div class="product-info">
+        <h2>See Everything. Go Further.</h2>
+
+        <p>
+            The Spectra Lumeo surgical lighting system offers bright, high-fidelity lighting for even the hardest to navigate surgeries.
+        </p>
+
+        <h3>Bright</h3>
+        <p>
+            160,000 Lux capable double domes provide a great deal of light on demand. Extreme reliability and longevity, backed by German-engineered arms, allow exact positioning and light delivery.
+        </p>
+
+        <h3>Shadow Free</h3>
+        <p>
+            Spectra Lumeo's precise optical design allows for 75% shadow dissolution, letting surgical staff position themselves freely—no more blocking the light field.
+        </p>
+
+        <a href="products.html" class="product-btn">Product Details</a>
+    </div>
+
+    <div class="product-img-box">
+        <img src="images/lumeo.jpg" alt="product image">
+    </div>
+
+</section>
+
+
+
+
+
+
+
+<!-- 
+
+
+
+<h2 class="section-heading">PRODUCTS</h2>
+
+<div class="main-container">
+
+    <div class="box">
+       
+        <button class="arrow left-arrow" onclick="prevSlide()">&lt;</button>
+        <img id="img1" src="img1.jpg" alt="">
+        <p id="title1"></p>
+    </div>
+
+    <div class="box">
+        <img id="img2" src="img2.jpg" alt="">
+        <p id="title2"></p>
+    </div>
+
+    <div class="box">
+        <img id="img3" src="img3.jpg" alt="">
+        <p id="title3"></p>
+       
+        <button class="arrow right-arrow" onclick="nextSlide()">&gt;</button>
+    </div>
+
+</div>
+<script>
+
+
+let products = [
+    {img: "img1.jpg", title: "SURGICAL DIATHERMY"},
+    {img: "img2.jpg", title: "OT LIGHTS"},
+    {img: "img3.jpg", title: "OT TABLES"},
+
+    {img: "img4.jpg", title: "ENDOSCOPY"},
+    {img: "img5.jpg", title: "LAPROSCOPY"},
+    {img: "img6.jpg", title: "SUCTION MACHINE"},
+
+    {img: "img7.jpg", title: "VENTILATORS"},
+    {img: "img8.jpg", title: "MONITORS"},
+    {img: "img9.jpg", title: "INFUSION PUMP"},
+];
+
+let i = 0;
+
+function loadSlides() {
+    document.getElementById("img1").src = products[i].img;
+    document.getElementById("title1").innerText = products[i].title;
+
+    document.getElementById("img2").src = products[i+1].img;
+    document.getElementById("title2").innerText = products[i+1].title;
+
+    document.getElementById("img3").src = products[i+2].img;
+    document.getElementById("title3").innerText = products[i+2].title;
+}
+
+function nextSlide() {
+    if (i + 3 < products.length) {
+        i += 3;
+        loadSlides();
+    }
+}
+
+function prevSlide() {
+    if (i - 3 >= 0) {
+        i -= 3;
+        loadSlides();
+    }
+}
+
+loadSlides();
+
+</script> -->
+
+
+<section class="prod-slider-section">
+  <h2 class="prod-slider-title">PRODUCTS</h2>
+
+  <div class="prod-slider-wrapper">
+
+    <button class="prod-slider-btn left" onclick="moveProduct(-1)">&#10094;</button>
+
+    <div class="prod-slider-viewport">
+      <div class="prod-slider-track" id="prodSliderTrack">
+
+        <div class="prod-slider-card">
+          <img src="images/epsilon-400.png">
+          <div class="prod-slider-name">SURGICAL DIATHERMY</div>
+        </div>
+
+        <div class="prod-slider-card">
+          <img src="images/lumolight.png">
+          <div class="prod-slider-name">OT.LIGHTS</div>
+        </div>
+
+        <div class="prod-slider-card">
+          <img src="images/psitable.jpg">
+          <div class="prod-slider-name">OT.TABLES</div>
+        </div>
+
+        <div class="prod-slider-card">
+          <img src="images/PSI-HORIZONTAL.jpg">
+          <div class="prod-slider-name">STERILIZERS</div>
+        </div>
+
+        <div class="prod-slider-card">
+          <img src="images/surgeon-chair.jpg">
+          <div class="prod-slider-name">SURGEON CHAIR</div>
+        </div>
+
+        <div class="prod-slider-card">
+          <img src="images/ot-care.jpeg">
+          <div class="prod-slider-name">OT.CARE</div>
+        </div>
+
+        <div class="prod-slider-card">
+          <img src="images/SUCTION.jpeg">
+          <div class="prod-slider-name">SUCTION APPARATUS</div>
+        </div>
+
+        <div class="prod-slider-card">
+          <img src="images/instavac.jpeg">
+          <div class="prod-slider-name">INSTAVAC SUCTION</div>
+        </div>
+
+        <div class="prod-slider-card">
+          <img src="images/uhcp_comfort.jpeg">
+          <div class="prod-slider-name">ANESTHESIA MACHINE</div>
+        </div>
+
+        <div class="prod-slider-card">
+          <img src="images/foggingmec.jpeg">
+          <div class="prod-slider-name">FOOGING MACHINE</div>
+        </div>
+
+      </div>
+    </div>
+
+    <button class="prod-slider-btn right" onclick="moveProduct(1)">&#10095;</button>
+
+  </div>
+</section>
+
+<script>
+  const track = document.getElementById("prodSliderTrack");
+  let cards = Array.from(track.children);
+
+  const visible = 3;
+  const gap = 30;
+  let index = visible; // start after prepended clones
+
+  // 👉 CLONE LAST & FIRST CARDS
+  const firstClones = cards.slice(0, visible).map(card => card.cloneNode(true));
+  const lastClones  = cards.slice(-visible).map(card => card.cloneNode(true));
+
+  lastClones.forEach(clone => track.insertBefore(clone, track.firstChild));
+  firstClones.forEach(clone => track.appendChild(clone));
+
+  // Update cards after cloning
+  cards = Array.from(track.children);
+
+  function getCardWidth() {
+    return cards[0].getBoundingClientRect().width + gap;
+  }
+
+  // INITIAL POSITION
+  track.style.transform = `translateX(-${index * getCardWidth()}px)`;
+
+  function moveProduct(direction) {
+    const cardWidth = getCardWidth();
+    index += direction;
+
+    track.style.transition = "transform 0.5s ease";
+    track.style.transform = `translateX(-${index * cardWidth}px)`;
+
+    // RESET POSITION WHEN HITTING CLONES
+    track.addEventListener("transitionend", resetLoop, { once: true });
+  }
+
+  function resetLoop() {
+    const cardWidth = getCardWidth();
+
+    if (index >= cards.length - visible) {
+      index = visible;
+      track.style.transition = "none";
+      track.style.transform = `translateX(-${index * cardWidth}px)`;
+    }
+
+    if (index < visible) {
+      index = cards.length - visible * 2;
+      track.style.transition = "none";
+      track.style.transform = `translateX(-${index * cardWidth}px)`;
+    }
+  }
+</script>
+
+
+
+
+
+
+
+
+
+
+<section class="about-wrapper">
+    <section class="about-section">
+        <div class="about-card">
+
+            <h2>Vasu Surgicals Is A Trusted Name In The Surgical And Medical Equipment Industry</h2>
+
+            <p>
+                We are dedicated to providing high-quality surgical and medical equipment with a
+                commitment to customer satisfaction. Our extensive range of products and prompt service
+                make us a preferred choice among healthcare professionals.
+            </p>
+
+            <h3>Located In The Heart Of Guntur.</h3>
+
+            <a href="profile.html" class="view-btn">VIEW MORE</a>
+
+        </div>
+    </section>
+</section>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<section class="gallery-section">
+  <h2 class="gallery-title">GALLERY</h2>
+
+  <div class="gallery-wrapper">
+
+    <!-- LEFT ARROW -->
+    <button class="gallery-btn left" onclick="moveSlide(-1)">&#10094;</button>
+
+    <!-- SLIDER -->
+    <div class="gallery-viewport">
+      <div class="gallery-track" id="galleryTrack">
+
+        <div class="gallery-card"><img src="images/PSI-HORIZONTAL.jpg"></div>
+        <div class="gallery-card"><img src="images/gal-2.jpeg"></div>
+        <div class="gallery-card"><img src="images/TOP.jpg"></div>
+        <div class="gallery-card"><img src="images/instavac.jpeg"></div>
+        <div class="gallery-card"><img src="images/psitable.jpg"></div>
+        <div class="gallery-card"><img src="images/ASTRA-101.png"></div>
+          <div class="gallery-card"><img src="images/ASTRA-103.png"></div>
+        <div class="gallery-card"><img src="images/PSI_Maximus_V2.jpg"></div>
+    </div>
+    </div>
+
+    <!-- RIGHT ARROW -->
+    <button class="gallery-btn right" onclick="moveSlide(1)">&#10095;</button>
+
+  </div>
+</section>
+<script>
+  const galleryTrack = document.getElementById("galleryTrack");
+  let galleryCards = Array.from(galleryTrack.children);
+
+  const galleryVisible = 3;
+  const galleryGap = 30;
+  let galleryIndex = galleryVisible; // start after prepended clones
+
+  // 🔁 CLONE SLIDES
+  const galleryFirstClones = galleryCards
+    .slice(0, galleryVisible)
+    .map(card => card.cloneNode(true));
+
+  const galleryLastClones = galleryCards
+    .slice(-galleryVisible)
+    .map(card => card.cloneNode(true));
+
+  galleryLastClones.forEach(clone =>
+    galleryTrack.insertBefore(clone, galleryTrack.firstChild)
+  );
+
+  galleryFirstClones.forEach(clone =>
+    galleryTrack.appendChild(clone)
+  );
+
+  // Update cards list
+  galleryCards = Array.from(galleryTrack.children);
+
+  function galleryCardWidth() {
+    return galleryCards[0].getBoundingClientRect().width + galleryGap;
+  }
+
+  // INITIAL POSITION
+  galleryTrack.style.transform =
+    `translateX(-${galleryIndex * galleryCardWidth()}px)`;
+
+  function moveSlide(direction) {
+    galleryIndex += direction;
+
+    galleryTrack.style.transition = "transform 0.5s ease";
+    galleryTrack.style.transform =
+      `translateX(-${galleryIndex * galleryCardWidth()}px)`;
+
+    galleryTrack.addEventListener("transitionend", resetGalleryLoop, { once: true });
+  }
+
+  function resetGalleryLoop() {
+    const cardWidth = galleryCardWidth();
+
+    // reached cloned end → jump to real start
+    if (galleryIndex >= galleryCards.length - galleryVisible) {
+      galleryIndex = galleryVisible;
+      galleryTrack.style.transition = "none";
+      galleryTrack.style.transform =
+        `translateX(-${galleryIndex * cardWidth}px)`;
+    }
+
+    // reached cloned start → jump to real end
+    if (galleryIndex < galleryVisible) {
+      galleryIndex = galleryCards.length - galleryVisible * 2;
+      galleryTrack.style.transition = "none";
+      galleryTrack.style.transform =
+        `translateX(-${galleryIndex * cardWidth}px)`;
+    }
+  }
+</script>
+
+
+
+
+
+
+
+
+
+
+
+<footer class="footer-section">
+<div class="container py-5">
+
+  <div class="row">
+
+    <!-- LEFT COLUMN -->
+    <div class="col-md-4 mb-4">
+      <h2 class="fw-bold footer-title">VASU SURGICALS</h2>
+
+      <p><i class="fa-solid fa-phone phone-icon"></i> 0863 2224151</p>
+      <p><i class="fa-solid fa-mobile-screen-button phone-icon"></i> +91 99499 69512</p>
+      <p><i class="fa-solid fa-envelope email-icon"></i> vasusurgicals@gmail.com</p>
+
+      <p><i class="fa-solid fa-location-dot location-icon"></i> 
+        Shop.No.6, LLR Municipal Complex, Women's College Road,  
+        GUNTUR, Andhra Pradesh - 522001.
+      </p>
+    </div>
+
+    <!-- MIDDLE COLUMN -->
+    <div class="col-md-4 mb-4">
+      <h2 class="fw-bold footer-title">QUICK LINKS</h2>
+
+      <ul class="footer-links">
+        <li><a href="index.html">HOME</a></li>
+        <li><a href="profile.html">PROFILE</a></li>
+        <li><a href="products.html">PRODUCTS</a></li>
+        <li><a href="about.html">ABOUT US</a></li>
+        <li><a href="contact.html">CONTACT US</a></li>
+      </ul>
+    </div>
+
+    <!-- RIGHT COLUMN -->
+    <div class="col-md-4 mb-4 text-md-start text-center">
+      <h2 class="fw-bold footer-title">FOLLOW US</h2>
+
+      <div class="social-icons">
+        <a href="#"><i class="fab fa-facebook fa-xl"></i></a>
+        <a href="#"><i class="fab fa-instagram fa-xl"></i></a>
+        <a href="#"><i class="fab fa-linkedin fa-xl"></i></a>
+      </div>
+    </div>
+  </div>
+</div>
+
+<hr class="footer-line">
+
+<div class="container text-center pb-3">
+<p class="footer-copy">
+  © All Copyrights Reserved VasuSurgicals 2025 |
+  Designed By <a href="http://www.nfosoft.com" target="_blank" class="designer">nfoSoft Innovations</a>
+
+</p>
+</div>
+
+</footer>
+
+
+
+
+
+<!-- FLOATING WHATSAPP BUTTON -->
+<a href="https://wa.me/919949969512" 
+   class="floating-whatsapp" 
+   target="_blank" 
+   aria-label="WhatsApp">
+  <i class="fab fa-whatsapp"></i>
+</a>
+
+<!-- FLOATING PHONE BUTTON -->
+<a href="tel:+919949969512" 
+   class="floating-phone" 
+   aria-label="Call">
+  <i class="fa-solid fa-phone"></i>
+</a>
+
+<!-- FLOATING WHATSAPP BUTTON -->
+<a href="https://wa.me/919949969512" 
+   class="floating-whatsapp" 
+   target="_blank" 
+   aria-label="WhatsApp">
+  <i class="fab fa-whatsapp"></i>
+</a>
+
+<!-- FLOATING PHONE BUTTON -->
+<a href="tel:+919949969512" 
+   class="floating-phone" 
+   aria-label="Call">
+  <i class="fa-solid fa-phone"></i>
+</a>
+
+
+</body>
+</html>
