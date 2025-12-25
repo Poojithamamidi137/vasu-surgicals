@@ -81,19 +81,18 @@
     </div>
 
     <!-- RIGHT SIDE -->
-    <div class="contact-right">
-        <h2 class="form-title">Enter Your Details</h2>
+   <div class="contact-right">
+  <h2 class="form-title">Enter Your Details</h2>
 
-        <form>
-            <input type="text" placeholder="Enter your name" required>
-            <input type="text" placeholder="Enter mobile number" required>
-            <input type="email" placeholder="Enter email" required>
-            <textarea placeholder="Enter message" required></textarea>
-            <button type="submit">Submit</button>
-        </form>
-    </div>
+  <form id="contactForm">
+    <input type="text" name="name" placeholder="Enter your name" required>
+    <input type="text" name="phone" placeholder="Enter mobile number" required>
+    <input type="email" name="email" placeholder="Enter email" required>
+    <textarea name="message" placeholder="Enter message" required></textarea>
+    <button type="submit">Submit</button>
+  </form>
+</div>
 
-</section>
 
 
 
@@ -172,6 +171,35 @@
   <i class="fa-solid fa-phone"></i>
 </a>
 
+<!-- EmailJS SDK -->
+<script src="https://cdn.jsdelivr.net/npm/emailjs-com@3/dist/email.min.js"></script>
+
+<script>
+  // Initialize EmailJS with your PUBLIC KEY
+  (function () {
+    emailjs.init("QSxtHr0elL4f3_e1g");
+  })();
+
+  // Handle form submit
+  document.getElementById("contactForm").addEventListener("submit", function (e) {
+    e.preventDefault(); // stop page reload
+
+    emailjs.sendForm(
+      "service_lspc5m9",     // your Service ID
+      "template_3q5sben",    // your Template ID
+      this
+    ).then(
+      function () {
+        alert("Message sent successfully!");
+        document.getElementById("contactForm").reset();
+      },
+      function (error) {
+        alert("Failed to send message. Please try again.");
+        console.error("EmailJS Error:", error);
+      }
+    );
+  });
+</script>
 
 </body>
 </html>
