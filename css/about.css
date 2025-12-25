@@ -75,9 +75,11 @@
         transition: 0.4s ease-in-out;
     }
 
-    #menu-toggle:checked ~ .nav-links {
-        height: 260px;
-        padding: 20px 0;
+   #menu-toggle:checked ~ .nav-links {
+    height: auto;
+    padding: 20px 0;
+}
+
     }
 
     .nav-links li {
@@ -87,7 +89,7 @@
     .hamburger {
         display: block;
     }
-}
+
 
 /* ---------------- DEMO CONTENT ---------------- */
 .content {
