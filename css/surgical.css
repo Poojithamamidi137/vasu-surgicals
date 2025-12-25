@@ -185,6 +185,65 @@ p {
 }
 
 
+/* ================= MOBILE FOOTER RESPONSIVENESS ================= */
+@media (max-width: 768px) {
+
+  /* Footer container spacing */
+  .footer-section {
+    padding: 40px 20px 20px;
+  }
+
+  /* Stack columns */
+  .footer-section .row {
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+  }
+
+  /* Titles */
+  .footer-title {
+    font-size: 22px;
+    margin-bottom: 14px;
+    text-align: left;
+  }
+
+  /* Text */
+  .footer-section p {
+    font-size: 15px;
+    line-height: 24px;
+  }
+
+  /* Quick links */
+  .footer-links li {
+    margin-bottom: 10px;
+  }
+
+  .footer-links a {
+    font-size: 15px;
+  }
+
+  /* Social icons alignment */
+  .social-icons {
+    justify-content: flex-start;
+    gap: 18px;
+  }
+
+  .social-icons i {
+    font-size: 22px;
+  }
+
+  /* Divider line */
+  .footer-line {
+    margin: 25px 0 15px;
+  }
+
+  /* Copyright */
+  .footer-copy {
+    font-size: 14px;
+    line-height: 22px;
+    padding: 0 10px;
+  }
+}
 
 
 
